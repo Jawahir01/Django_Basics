@@ -1,5 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
-def hello_world(request):
-    return HttpResponse("My First Django App!")
+def get_todo_lists(request):
+    return render(request, 'todo/todo_list.html')
